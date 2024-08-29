@@ -1,0 +1,26 @@
+O integer: getAgeInRange(minAge, maxAge)
+	//Prompt for input within the value range
+	while(true)
+		output "Enter your age(", minAge," to ",maxAge,"):"
+		age <- input
+
+		// Check if the input is a valid number
+		if ( age is a number )
+			output "Invalid input. Please enter a valid number."
+			continue
+		endif
+
+		// Convert input to integer if necessary
+		age <- ConvertToString(age)
+
+		//Check if the age is within specified range
+		if(age >= minAge AND age <= maxAge )
+			// Valid age entered
+			break
+		else
+			//Invalid age, prompt again
+			output "Age must be between ",minAge," and ", maxAge, ". Please try again."
+		endif
+	endwhile
+	
+	return age
