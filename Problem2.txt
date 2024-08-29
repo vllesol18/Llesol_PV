@@ -5,7 +5,7 @@ O void: BubbleSort(Array,N)
      Swapped = False
 
      // Last(i-1) elements are already sorted, so no need to check them
-     for (increase j from 1 to N - i)
+     for (increase j from 1 to N - i - 1)
          if ( Array[j] > Array[j+1]
              //Swap Array[j] and Array[j+1]
              Temp = Array[j]
