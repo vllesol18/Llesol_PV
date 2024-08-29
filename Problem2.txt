@@ -5,15 +5,15 @@ O void: BubbleSort(Array,N)
      Swapped = False
 
      // Last(i-1) elements are already sorted, so no need to check them
-     for (increase j from 1 to N - 1)
+     for (increase j from 1 to N - i)
          if ( Array[j] > Array[j+1]
              //Swap Array[j] and Array[j+1]
-             Tempt = Array[j]
+             Temp = Array[j]
              Array[j] = Array[j+1]
-             Tempt = Array[j+1]
+             Array[j+1] = Temp
 
              //Set the flag to indicate a swap occured
-  	     Swapped = trye
+  	     Swapped = true
 	  endif
      endfor
 
